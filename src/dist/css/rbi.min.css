@@ -1,0 +1,324 @@
+/*variables*/
+/*mixins*/
+/*fonts*/
+* {
+  outline: none!important;
+}
+h1,
+.h1 {
+  font-size: 3.375rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #1a2333;
+}
+h2 {
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #1a2333;
+}
+h3 {
+  font-size: 1.375rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: #1a2333;
+}
+h4 {
+  font-size: 1.125rem;
+  color: #1a2333;
+}
+p {
+  line-height: 1.5rem;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #45484c;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #fafcff;
+  background-image: url(../img/hero.png), url(../img/body-bg2.png);
+  background-position: top right, bottom right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto auto, 100% auto;
+}
+.top-menu {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  padding: 0.9375rem 0;
+  top: 0;
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  left: 0;
+}
+.top-menu.fixed {
+  background-color: #fff;
+  padding: 0.3125rem 0;
+  box-shadow: 0.125rem 0.125rem 0.3125rem rgba(0, 0, 0, 0.3);
+}
+.top-menu .nav-item:last-child .nav-link {
+  padding-right: 0!important;
+}
+.top-menu .nav-link {
+  font-size: 0.875rem;
+  font-family: 'Rubik', sans-serif;
+  padding-left: 1.125rem !important;
+  padding-right: 1.125rem !important;
+  color: #1a2333;
+}
+@media (min-width: 990/16rem) {
+  .top-menu .nav-link:hover {
+    opacity: 0.7;
+  }
+}
+.top-menu .navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+section {
+  width: 100%;
+  float: left;
+  background-repeat: no-repeat;
+  padding: 6.25rem 0;
+}
+section.hero {
+  padding-top: 8.125rem;
+}
+section.hero label {
+  font-size: 0.75rem;
+  color: #3e82f0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+section.hero .btn-blue {
+  margin-top: 2.5rem;
+}
+section.real-estate {
+  background-size: 100% auto;
+  background-position: center center;
+  min-height: 78.125rem;
+}
+section.real-estate h2 {
+  margin-bottom: 2.5rem;
+}
+section.footer {
+  padding: 6.25rem 0 1.25rem;
+  background-size: 100% 25rem;
+  background-position: bottom center;
+}
+section.footer .h1 {
+  margin-top: 6.25rem;
+}
+.clients-slider {
+  position: relative;
+  z-index: 100;
+  padding: 0 0.9375rem;
+  width: 100%;
+  margin-top: -5rem;
+  float: left;
+}
+.clients-slider .slick-track {
+  padding: 1.875rem 0;
+}
+.clients-slider .item {
+  padding: 0 0.9375rem;
+}
+.clients-slider .item div {
+  width: 100%;
+  float: left;
+  text-align: center;
+  background-color: #fff;
+  min-height: 8.3125rem;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+  box-shadow: 0.3125rem 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
+}
+.btn-blue {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  max-width: 8.75rem;
+  width: 100%;
+  line-height: 3.125rem;
+  border-radius: 1.75rem;
+  -webkit-border-radius: 1.75rem;
+  -moz-border-radius: 1.75rem;
+  transition: all 0.2s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  text-align: center;
+  text-decoration: none!important;
+  display: inline-block;
+  padding: 0 0.625rem;
+  cursor: pointer;
+  background-color: #3e82f0;
+  border: 0.0625rem solid #3e82f0;
+  font-size: 0.75rem;
+  color: #fff;
+}
+@media (min-width: 990/16rem) {
+  .btn-blue:hover {
+    background-color: #fff;
+    color: #3e82f0;
+  }
+}
+.btn-blue.big {
+  max-width: 17.1875rem;
+  line-height: 3.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 1.875rem;
+  -webkit-border-radius: 1.875rem;
+  -moz-border-radius: 1.875rem;
+}
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 1.5625rem;
+  height: 0;
+}
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.video-bg {
+  background-color: #b4bdcc;
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+  box-shadow: 1.875rem 1.875rem 6.25rem rgba(0, 0, 0, 0.15);
+  min-height: 18.75rem;
+  width: 100%;
+  float: left;
+}
+.video-bg .btn-play {
+  box-shadow: 0rem 0rem 2.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+.app-holder .inner {
+  margin-top: 1.875rem;
+  padding: 3.125rem 2.5rem;
+  width: 100%;
+  min-height: 28.75rem;
+  float: left;
+  background-color: #fff;
+  box-shadow: 0rem 0rem 2.5rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.3125rem;
+  -webkit-border-radius: 0.3125rem;
+  -moz-border-radius: 0.3125rem;
+}
+.app-holder .inner h3 {
+  margin: 1.25rem 0 2.5rem;
+}
+.app-holder .inner p {
+  font-size: 0.9375rem;
+  line-height: 1.4375rem;
+}
+.form-holder {
+  float: left;
+  width: 100%;
+  padding: 4.0625rem 5rem;
+  background-color: #fff;
+  margin-bottom: 3.125rem;
+  box-shadow: 1.875rem 1.875rem 3.75rem rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow: 1.875rem 1.875rem 3.75rem rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1.875rem 1.875rem 3.75rem rgba(0, 0, 0, 0.05);
+  border-radius: 0.625rem;
+  -webkit-border-radius: 0.625rem;
+  -moz-border-radius: 0.625rem;
+}
+.form-holder label {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.form-holder .form-control {
+  border: none;
+  background-color: #f0f6ff;
+  height: 3.625rem;
+  margin-bottom: 0.9375rem;
+}
+.form-holder button {
+  margin-top: 3.125rem;
+}
+.copy-text p {
+  font-size: 0.875rem;
+  opacity: 0.5;
+  color: #fff;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .clients-slider {
+    margin-top: 0;
+  }
+  .app-holder .inner {
+    padding: 3.125rem 0.9375rem;
+  }
+  section.real-estate {
+    background-position: bottom center;
+    min-height: 59.375rem;
+  }
+}
+@media (max-width: 990px) {
+  .top-menu {
+    background-color: #fff;
+  }
+  section {
+    padding: 3.125rem 0;
+  }
+  section.real-estate {
+    min-height: 46.875rem;
+  }
+  .form-holder {
+    padding: 2.1875rem 1.875rem;
+  }
+}
+@media (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  .app-holder .inner {
+    min-height: 0.0625rem;
+  }
+  .form-holder {
+    margin: 1.875rem 0;
+  }
+  section.footer {
+    padding-top: 3.125rem;
+  }
+}
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
