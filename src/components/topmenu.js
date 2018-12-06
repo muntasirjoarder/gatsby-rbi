@@ -1,4 +1,6 @@
 import React, {Component} from 'react'
+import { FaBars } from 'react-icons/fa';
+
 const logoUrl = require('../dist/img/logo.png')
 
 class TopMenu extends Component {
@@ -31,7 +33,7 @@ class TopMenu extends Component {
                 <a className="navbar-brand" href="#"><img src={logoUrl} alt="logo"/></a>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="fas fa-bars"></span>
+                    <FaBars />
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarMain">

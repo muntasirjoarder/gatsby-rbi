@@ -15,7 +15,7 @@ const c1Url = require('../dist/img/c1.png')
 const c2Url = require('../dist/img/c2.png')
 const c3Url = require('../dist/img/c3.png')
 const c4Url = require('../dist/img/c4.png')
-const playUrl = require('../dist/img/play.svg')
+
 const iconUrl = require('../dist/img/icon.svg')
 const realUrl = require('../dist/img/real.svg')
 const footerUrl = require('../dist/img/footer.png')
@@ -23,9 +23,7 @@ const youtubeId = 'RnDC9MXSqCY'
 
 
 const IndexPage = () => (
-  <Layout>
-
-  
+  <Layout> 
        <section className="hero">
             <div className="container">
                 <div className="row">
